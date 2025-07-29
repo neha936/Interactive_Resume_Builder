@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Interactive Resume Builder</h1>
+    <button id="dark-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="resume-form">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="you@example.com" />
+
+        <label>Phone</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" />
+
+        <label>Professional Summary</label>
+        <textarea id="summary" placeholder="Tell us about yourself..."></textarea>
+
+        <label>Education</label>
+        <textarea id="education" placeholder="Your education background..."></textarea>
+
+        <label>Experience</label>
+        <textarea id="experience" placeholder="Your work experience..."></textarea>
+
+        <label>Skills</label>
+        <textarea id="skills" placeholder="E.g., JavaScript, Python, C++..."></textarea>
+      </form>
+      <button onclick="downloadResume()">📄 Download / Print</button>
+    </section>
+
+    <section class="preview-section">
+      <h2>Live Resume Preview</h2>
+      <div id="resume-preview" class="resume-box">
+        <p>Start typing on the left to preview your resume here...</p>
+      </div>
+    </section>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
